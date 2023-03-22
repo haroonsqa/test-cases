@@ -18,13 +18,12 @@ describe('Log in to IMS with invaild Data ', () =>
                     // cy.wait(20000)
                   
                     cy.get('.sso-page-top > h1').should('have.text', LoginData.Expected)
-                    console.log('HELLO =============>>', cy.get('.footer-desc > :nth-child(1)') )
+                 
                     
                 }
                 else{
         
         
-                    console.log('byyyyyyyyyy =============>>',  cy.get('#errorDiv'))
                     cy.get('#errorDiv').should('have.text',LoginData.Expected) 
                  
                 }
