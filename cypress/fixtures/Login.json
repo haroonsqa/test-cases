@@ -1,5 +1,10 @@
 [
 {
+    "email": "Haroon.sqa@pk.see.biz23",
+    "password": "Temp12a3!",
+    "Expected": "Invalid email and password"
+  },
+  {
     "email": "Haroon.sqa@pk.see.biz",
     "password": "Temp12a3!",
     "Expected": "Password is not correct"
@@ -9,6 +14,21 @@
     "email": "hello@cypress.io",
     "password": "Temp123!",
     "Expected": "Invalid email and password"
+  },
+  {
+    "email": " ",
+    "password": " ",
+    "Expected": "Invalid email and password"
+  },
+  {
+    "email": "Haroon.sqa@pk.see.biz",
+    "password": " ",
+    "Expected": "Password is not correct"
+  },
+  {
+    "email": "haroon.sqa+908@gmail.com",
+    "password": "Temp1231",
+    "Expected": "Email is not confirmed."
   },
   {
     "email": "Haroon.sqa@pk.see.biz",

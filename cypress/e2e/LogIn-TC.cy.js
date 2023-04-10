@@ -1,6 +1,6 @@
 
 
-describe('Log in to IMS with invaild Data ', () => 
+describe('Login testcases  ', () => 
 {
     it('Should check multiple credentials', () =>{
 
@@ -16,16 +16,11 @@ describe('Log in to IMS with invaild Data ', () =>
                 if(LoginData.email=='Haroon.sqa@pk.see.biz' && LoginData.password=='Temp123!')
                 {
                     // cy.wait(20000)
-                  
                     cy.get('.sso-page-top > h1').should('have.text', LoginData.Expected)
                  
-                    
                 }
                 else{
-        
-        
                     cy.get('#errorDiv').should('have.text',LoginData.Expected) 
-                 
                 }
                 
                
